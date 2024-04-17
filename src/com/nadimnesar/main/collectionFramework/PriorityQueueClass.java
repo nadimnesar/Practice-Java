@@ -1,32 +1,4 @@
 package com.nadimnesar.main.collectionFramework;
 
-public class PriorityQueueClass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
+public class PriorityQueueClass{
 }
