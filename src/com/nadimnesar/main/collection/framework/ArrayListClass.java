@@ -90,8 +90,8 @@ public class ArrayListClass {
         }
 
         /*
-         * .clear operation clear/remove all elements and its allocated space from the memory.
-         * ArrayList itself still remain and can use later.
+         * .clear operation removes all elements from the array list.
+         * The array list becomes empty after this operation.
          * Time complexity - O(n)
          */
         arrayList.clear();
