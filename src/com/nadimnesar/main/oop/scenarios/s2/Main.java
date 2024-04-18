@@ -1,4 +1,4 @@
-package com.nadimnesar.main.oopScenarios.s2;
+package com.nadimnesar.main.oop.scenarios.s2;
 
 public class Main {
     public static void main(String[] args) {

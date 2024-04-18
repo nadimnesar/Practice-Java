@@ -1,4 +1,4 @@
-package com.nadimnesar.main.collectionFramework;
+package com.nadimnesar.main.collection.framework;
 
 import java.util.TreeSet;
 

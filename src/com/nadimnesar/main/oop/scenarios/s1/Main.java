@@ -1,4 +1,4 @@
-package com.nadimnesar.main.oopScenarios.s1;
+package com.nadimnesar.main.oop.scenarios.s1;
 import java.util.List;
 
 public class Main {

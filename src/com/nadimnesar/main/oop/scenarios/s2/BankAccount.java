@@ -1,4 +1,4 @@
-package com.nadimnesar.main.oopScenarios.s2;
+package com.nadimnesar.main.oop.scenarios.s2;
 
 public class BankAccount {
     private double balance;
