@@ -39,7 +39,7 @@ public class LambdaExpression {
         arrayList.forEach(n -> System.out.println(n));
 
         System.out.println("Using lambda expression to print even elements");
-        arrayList.forEach(
+        arrayList.forEach( //in forEach funtion only void can be returned
                 n -> {
                     if (n % 2 == 0)
                         System.out.println(n);
