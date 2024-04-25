@@ -27,7 +27,7 @@ public class FileManipulate {
         FileInputStream fileInputStream = new FileInputStream(file);
     }
 
-    public static void openFileE2() { //bad way
+    public static void openFileE2() { //bad approach
         String currDir = System.getProperty("user.dir");
         String fileName = "my_files.txt"; //wrong file
         String pathAddress = currDir + "/src/com/nadimnesar/main/exception/handling/checked/" + fileName;
