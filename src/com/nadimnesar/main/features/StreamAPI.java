@@ -22,16 +22,18 @@ public class StreamAPI {
         List<User> filteredUserList = userList.stream().filter(e -> e.getUserCountry().equals("Cumilla")).toList();
         filteredUserList.forEach(e -> System.out.println(e.getUserId()));
 
-//        List<User> updatedList = userList.stream().map(
-//                e -> {
-//                    if (e.getUserCountry().equals("Cumilla")) {
-//                        e.setUserName(e.getUserName() + " " + e.getUserCountry());
-//                        return e;
-//                    }
-//                    return null;
-//                }
-//        ).filter(e -> e != null).toList();
-//        updatedList.forEach(e -> System.out.println(e.getUserName()));
+        System.out.println("Update UserList:");
+        List<User> updatedList = userList.stream().map(
+                e -> {
+                    if (e.getUserCountry().equals("Cumilla")) {
+                        User e2 = new User(e);
+                        e2.setUserName(e.getUserName() + " " + e.getUserCountry());
+                        return e2;
+                    }
+                    return null;
+                }
+        ).filter(e -> e != null).toList();
+        updatedList.forEach(e -> System.out.println(e));
 
         System.out.println("Cumilla's usernames:");
         List<String> filteredStringList = userList.stream().map(e -> {
@@ -53,6 +55,16 @@ class User {
         this.userId = userId;
         this.userName = userName;
         this.userCountry = userCountry;
+    }
+
+    public User() {
+
+    }
+
+    public User(User e) {
+        this.userId = e.getUserId();
+        this.userName = e.getUserName();
+        this.userCountry = e.getUserCountry();
     }
 
     public String getUserId() {
@@ -77,5 +89,14 @@ class User {
 
     public void setUserCountry(String userCountry) {
         this.userCountry = userCountry;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userCountry='" + userCountry + '\'' +
+                '}';
     }
 }
