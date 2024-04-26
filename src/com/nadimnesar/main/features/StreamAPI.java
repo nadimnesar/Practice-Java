@@ -61,7 +61,7 @@ public class StreamAPI {
         System.out.println("Sorted List:");
         sortedList.forEach(e -> System.out.println(e));
 
-        //looping all elements and reducing to 1 according to a condition
+        //Looping all elements and reducing to 1 according to a condition
         List<String> words = Arrays.asList("Hello", "world", "of java");
         String concatenated = words.stream().reduce("starting", (partialResult, ith_element) -> partialResult + ith_element);
         System.out.println("Concatenated string: " + concatenated);
