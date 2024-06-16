@@ -78,7 +78,7 @@ public class HashMapClass {
 
     private static void printHashMap(HashMap<String, Object> hashMap) {
         System.out.println("\n\nPrinting the hash map:");
-        for (Map.Entry <String, Object> element: hashMap.entrySet()) {
+        for (Map.Entry<String, Object> element : hashMap.entrySet()) {
             System.out.println("Key: " + element.getKey() + " | Value: " + element.getValue());
         }
     }

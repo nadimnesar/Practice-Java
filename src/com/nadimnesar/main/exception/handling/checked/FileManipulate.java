@@ -23,7 +23,6 @@ public class FileManipulate {
         String pathAddress = currDir + "/src/com/nadimnesar/main/exception/handling/checked/" + fileName;
 
         File file = new File(pathAddress);
-
         FileInputStream fileInputStream = new FileInputStream(file);
     }
 
